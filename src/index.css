@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+body{
+    background-color: black;
+    color: white;
+}
+/* loading screen */
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--main-color);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+movie-box{
+    transition: 1s;
+    border-radius: 20px;
+}
+.movie-box:hover{
+    border: 1px solid red;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.slick-dots li button:before {
+    color: #d47f7f; 
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #e43434; 
+  }
+
+  .slick-dots {
+    bottom: 20px;
+  }
+
+
+  
